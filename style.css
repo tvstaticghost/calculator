@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&family=Rubik&display=swap');
+
+:root { 
+    --clr-blue: #05386B;
+    --clr-lightgreen: #8EE4AF;
+    --clr-green: #5CDB95;
+    --clr-darkgreen: #379683;
+    --clr-darkpurple: #5633a0;
+    --clr-lightpurple: #553daa;
+    --clr-white: #EDF5E1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--clr-blue);
+    color: white;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px var(--clr-darkgreen);
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+    text-shadow: 2px 2px var(--clr-darkgreen);
+    font-size: 2rem;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid var(--clr-white);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    max-width: 23rem;
+    margin: 4rem auto;
+    border-radius: 11px;
+    background-color: var(--clr-white);
+    box-shadow: 5px 5px gray;
+}
+
+.screen__wrapper {
+    border: 2px solid var(--clr-white);
+    max-height: 5rem;
+    margin-bottom: 2rem;
+    border-radius: 11px;
+    background-color: var(--clr-darkgreen);
+    box-shadow: 5px 5px gray inset;
+}
+
+.calc__subscreen {
+    min-width: 19rem;
+    min-height: 1.7rem;
+}
+
+.calc__screen {
+    min-width: 19rem;
+    min-height: 3rem;
+    margin-bottom: 2rem;
+    text-align: end;
+    font-size: 27px;
+    padding-right: 5px;
+}
+
+.calculator__buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.group1, .group2, .group3, .group4, .group5 {
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.accent {
+    background-color: var(--clr-darkgreen);
+}
+
+.main__button {
+    background-color: var(--clr-lightgreen);
+}
+
+button {
+    min-width: 4rem;
+    min-height: 4rem;
+    border: none;
+    border-radius: 11px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 5px 5px gray;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px gray;
+    translate: 5px 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--clr-lightgreen);
+    padding: 0 2rem;
+    color: black;
+}
+
+a {
+    padding-top: 4px;
+}
+
+a:hover {
+    opacity: 0.5;
+}
